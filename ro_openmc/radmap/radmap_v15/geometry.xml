@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<geometry>
+  <cell id="1" material="1" name="s1 cell" region="5 -6 7 -8" universe="1" />
+  <cell id="2" material="2" name="s2 cell" region="~(5 -6 7 -8) (9 -10 11 -12)" universe="1" />
+  <cell fill="2" id="3" name="arrays cell" region="13 -14 15 -16" universe="3" />
+  <cell id="4" material="void" name="root cell" region="~(13 -14 15 -16) (1 -2 3 -4)" universe="3" />
+  <cell id="5" material="void" name="outer cell" region="~(1 -2 3 -4) (17 -18 19 -20)" universe="3" />
+  <lattice id="2" name="detector arrays">
+    <pitch>1 1</pitch>
+    <dimension>10 10</dimension>
+    <lower_left>-5.0 -5.0</lower_left>
+    <universes>
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 </universes>
+  </lattice>
+  <surface coeffs="-100000" id="1" type="x-plane" />
+  <surface coeffs="100000" id="2" type="x-plane" />
+  <surface coeffs="-100000" id="3" type="y-plane" />
+  <surface coeffs="100000" id="4" type="y-plane" />
+  <surface coeffs="-0.4" id="5" type="x-plane" />
+  <surface coeffs="0.4" id="6" type="x-plane" />
+  <surface coeffs="-0.4" id="7" type="y-plane" />
+  <surface coeffs="0.4" id="8" type="y-plane" />
+  <surface coeffs="-0.5" id="9" type="x-plane" />
+  <surface coeffs="0.5" id="10" type="x-plane" />
+  <surface coeffs="-0.5" id="11" type="y-plane" />
+  <surface coeffs="0.5" id="12" type="y-plane" />
+  <surface coeffs="-5" id="13" type="x-plane" />
+  <surface coeffs="5" id="14" type="x-plane" />
+  <surface coeffs="-5" id="15" type="y-plane" />
+  <surface coeffs="5" id="16" type="y-plane" />
+  <surface boundary="vacuum" coeffs="-100100" id="17" type="x-plane" />
+  <surface boundary="vacuum" coeffs="100100" id="18" type="x-plane" />
+  <surface boundary="vacuum" coeffs="-100100" id="19" type="y-plane" />
+  <surface boundary="vacuum" coeffs="100100" id="20" type="y-plane" />
+</geometry>
