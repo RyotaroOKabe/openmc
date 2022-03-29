@@ -5,6 +5,13 @@ on:
   workflow_dispatch:
 
   pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - 'examples/**'
+      - 'man/**'
+      - '**.md'
+      - CODEOWNERS
+      - LICENSE
     branches:
       - develop
       - master
@@ -120,7 +127,7 @@ jobs:
       - name: after_success
         shell: bash
         run: |
-          cpp-coveralls -i src -i include --exclude-pattern "/usr/*" --dump cpp_cov.json
+          cpp-coveralls -i src -i include -e src/external --exclude-pattern "/usr/*" --dump cpp_cov.json
           coveralls --merge=cpp_cov.json --service=github
 
   finish:
