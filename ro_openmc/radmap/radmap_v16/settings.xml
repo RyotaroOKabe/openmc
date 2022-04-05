@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+  <run_mode>fixed source</run_mode>
+  <particles>500000</particles>
+  <batches>100</batches>
+  <inactive>10</inactive>
+  <source particle="photon" strength="10">
+    <space type="point">
+      <parameters>-382.13269954526555 33.161926723867175 0</parameters>
+    </space>
+    <energy type="discrete">
+      <parameters>500000.0 1</parameters>
+    </energy>
+  </source>
+  <photon_transport>true</photon_transport>
+</settings>
